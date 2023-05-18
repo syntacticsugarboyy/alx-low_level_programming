@@ -17,10 +17,10 @@ int main(void)
 	float f;
 
 	printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
-	puts("Size of an int: %lu byte(s)", (unsigned long)sizeof(i));
-	puts("Size of a long int: %lu byte(s)", (unsigned long)sizeof(l));
-	puts("Size of a long long int: %lu byte(s)", (unsigned long)sizeof(ll));
-	puts("Size of a float: %lu byte (s)", (unsigned long)sizeof(f));
+	printf("Size of an int: %lu byte(s)", (unsigned long)sizeof(i));
+	printf("Size of a long int: %lu byte(s)", (unsigned long)sizeof(l));
+	printf("Size of a long long int: %lu byte(s)", (unsigned long)sizeof(ll));
+	printf("Size of a float: %lu byte (s)", (unsigned long)sizeof(f));
 
 	return (0);
 }
