@@ -6,32 +6,28 @@
  * Description: A program that prints all possible
  *		combinations of two two-digit numbers
  *
- * Return: Always 0 (Succes)
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
 	int i;
-	int j;
 	int k;
-	int l;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
+		for (k = i + 1; k <= 99; k++)
 		{
-			for (k = '0'; k <= '9'; k++)
+			putchar(i /10 + '0');
+			putchar(i % 10 + '0');
+			putchar(' ');
+			putchar(k / 10 + '0');
+			putchar(k % 10 + '0');
+
+			if(i != 98 || k != 99)
 			{
-				for (l = k + 1; l <= '9'; l ++)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(' ');
-					putchar(k);
-					putchar(l);
-						putchar(',');
-						putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
