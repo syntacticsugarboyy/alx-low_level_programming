@@ -2,7 +2,7 @@
 
 /**
  * _abs - absolute
- *
+ * @n: integer
  * Description: A function that prints the absolute value of numbers
  *
  * Return: 0
