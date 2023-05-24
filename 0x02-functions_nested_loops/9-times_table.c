@@ -20,8 +20,15 @@ void times_table(void)
 		{
 			mul = num * loop;
 
-			if (mul / 10 == 0)
+			if (num == 0 && loop == 0)
+				{
+					putchar(mul + '0');
+				}
+
+			else if (mul > 9)
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 				_putchar((mul % 10) + '0');
 
@@ -29,16 +36,11 @@ void times_table(void)
 
 			else
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar((mul / 10) + '0');
 				_putchar((mul % 10) + '0');
 			}
-
-			if (loop < 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-
 		}
 		putchar('\n');
 	}
