@@ -10,10 +10,9 @@
 
 int main(void)
 {
-	int loop;
-	int fzbz = 0;
+	int fzbz;
 
-	for (loop = 1; loop <= 100; loop++)
+	for (fzbz = 1; fzbz <= 100; fzbz++)
 	{
 		if ((fzbz % 3) == 0 || (fzbz % 5) == 0)
 		{
@@ -31,9 +30,9 @@ int main(void)
 			}
 		}
 
-		if (loop == 100)
+		if (fzbz == 100)
 		{
-			printf("%d\n", fzbz);
+			printf("Buzz\n");
 		}
 
 		else
@@ -41,4 +40,6 @@ int main(void)
 			printf("%d, ", fzbz);
 		}
 	}
+
+	return (0);
 }
