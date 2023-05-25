@@ -14,13 +14,18 @@ int main(void)
 
 	for (fzbz = 1; fzbz <= 100; fzbz++)
 	{
-		if ((fzbz % 3) == 0 || (fzbz % 5) == 0)
+		if (fzbz == 100)
+		{
+			printf("Buzz\n");
+		}
+
+		else if ((fzbz % 3) == 0 || (fzbz % 5) == 0)
 		{
 			if ((fzbz % 3) == 0 && (fzbz % 5) == 0)
 			{
 				printf("FizzBuzz, ");
 			}
-			else if (fzbz % 3 == 0)
+			else if ((fzbz % 3) == 0)
 			{
 				printf("Fizz, ");
 			}
@@ -28,11 +33,6 @@ int main(void)
 			{
 				printf("Buzz, ");
 			}
-		}
-
-		if (fzbz == 100)
-		{
-			printf("Buzz\n");
 		}
 
 		else
