@@ -18,7 +18,6 @@ int main(void)
 	{
 		prueba = 0;
 
-	
 		if ((num % i) == 0)
 		{
 			for (j = 2; j <= i; j++)
