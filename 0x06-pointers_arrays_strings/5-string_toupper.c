@@ -6,6 +6,7 @@
  *
  * Description: A function that changes a string to uppercase
  *
+ * Return: s
  */
 
 char *string_toupper(char *s)
