@@ -30,6 +30,10 @@ char *cap_string(char *b)
 				b[index] == '{' ||
 				b[index] == '}')
 		{
+			if (b[index] == '\t')
+			{
+				b[index] = ' ';
+			}
 			next = 1;
 		}
 
