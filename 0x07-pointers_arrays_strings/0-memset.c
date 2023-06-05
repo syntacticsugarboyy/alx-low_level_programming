@@ -20,7 +20,7 @@ char *_memset(char *s, char b, unsigned int n)
 		s[index] = b;
 	}
 
-	s[index] = '\0';
+	/*s[index] = '\0';*/
 
 	return (s);
 }
