@@ -7,7 +7,7 @@
  *
  * Description: A function that locates character in a string
  *
- * Return: pointer to the character s[index]
+ * Return: s
  */
 
 char *_strchr(char *s, char c)
