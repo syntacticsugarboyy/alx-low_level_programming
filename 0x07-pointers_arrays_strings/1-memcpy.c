@@ -20,7 +20,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		dest[index] = src[index];
 	}
 
-	dest[index] = '\0';
+	/*dest[index] = '\0';*/
 
 	return (dest);
 }
