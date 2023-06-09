@@ -1,0 +1,32 @@
+#include "main.h"
+
+/**
+ * _strncat - concatenates strings
+ * @dest: destination string
+ * @src: string to be appended
+ * @n: number of characters to be appended
+ *
+ * Description: A function that catenates n characters between strings
+ *
+ * Return: pointer to destination string
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int d_index;
+	int s_index;
+
+	for (d_index = 0; dest[d_index] != '0'; d_index++)
+
+	d_index--;
+
+	for (s_index = 0; s_index < n && src[s_index] != '\0'; s_index++)
+	{
+		dest[d_index] = src[s_index];
+
+		d_index++;
+	}
+	dest[d_index] = '\0';
+
+	return (dest);
+}
