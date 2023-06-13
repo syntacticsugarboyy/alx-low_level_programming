@@ -13,31 +13,28 @@ char *cap_string(char *b)
 {
 	int index;
 	int next;
+	char *del = " \t\n,.!?()\"{};";
+	int del_i = 0;
 
 	for (index = 0; b[index] != '\0'; index++)
 	{
-		if (b[index] == ' ' ||
-				b[index] == '\t' ||
-				b[index] == '\n' ||
-				b[index] == '!' ||
-				b[index] == ',' ||
-				b[index] == ';' ||
-				b[index] == '.' ||
-				b[index] == '"' ||
-				b[index] == '?' ||
-				b[index] == '(' ||
-				b[index] == ')' ||
-				b[index] == '{' ||
-				b[index] == '}')
+		del_i = 0;
+
+		while (del[del_i] != '\0')
 		{
-			if (b[index] == '\t')
+			if (b[index] == del[del_i])
 			{
-				b[index] = ' ';
+				if (b[index] == '\t')
+				{
+					b[index] = ' ';
+				}
+				next = 1;
+				break;
 			}
-			next = 1;
+			del_i++;
 		}
 
-		else if (next && (b[index] >= 97 && b[index] <= 122))
+		if (next && (b[index] >= 97 && b[index] <= 122))
 		{
 			b[index] = b[index] - 32;
 			next = 0;

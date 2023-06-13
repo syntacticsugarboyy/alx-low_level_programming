@@ -13,20 +13,37 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int d_index;
-	int s_index;
+	char *ptr = dest;
+	char *s = src;
+	int i;
 
-	for (d_index = 0; dest[d_index] != '0'; d_index++)
+	while (*ptr != '\0')
+		ptr++;
 
-	d_index--;
-
-	for (s_index = 0; s_index < n && src[s_index] != '\0'; s_index++)
+	i = 0;
+	while (*s != '\0')
 	{
-		dest[d_index] = src[s_index];
-
-		d_index++;
+		i++;
+		s++;
 	}
-	dest[d_index] = '\0';
+	if (n > i)
+	{
+		while (*src != '\0')
+		{
+			*ptr = *src;
+			ptr++;
+			src++;
+		}
+	}
+	else
+	{
+		int j;
 
+		for (j = 0; j < n; j++)
+		{
+			*ptr = src[j];
+			ptr++;
+		}
+	}
 	return (dest);
 }

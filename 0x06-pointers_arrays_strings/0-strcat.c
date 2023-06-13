@@ -12,20 +12,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int dest_str;
-	int src_str;
+	int d_index;
+	int s_index;
 
-	for (dest_str = 0; dest[dest_str] != '\0'; dest_str++)
+	for (d_index = 0; dest[d_index] != '\0'; d_index++)
 	{
 	}
 
-	for (src_str = 0; src[src_str] != '\0'; src_str++)
+	for (s_index = 0; src[s_index] != '\0'; s_index++)
 	{
-		dest[dest_str] = src[src_str];
+		dest[d_index] = src[s_index];
 
-		dest_str++;
+		d_index++;
 	}
-	dest[dest_str] = '\0';
+	dest[d_index] = '\0';
 
 	return (dest);
 }
