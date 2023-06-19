@@ -1,0 +1,3 @@
+A MACRO is a simple identifier that hets replaced by a code fragment.
+There are many common pre-defined MACRO's like __FILE__, __LINE__, __DATE__, __TIME__
+Include guard files are very important... #ifndef #define #endif...
