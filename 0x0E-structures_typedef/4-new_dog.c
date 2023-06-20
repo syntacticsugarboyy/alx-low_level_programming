@@ -14,20 +14,16 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
-	int index_n;
-	int index_o;
-	int i;
-	int j;
+	int index_n, index_o;
+	int i, j;
 
-	for (index_n = 0; name[index_n] != '\0'; index_n++);
-
-	for (index_o = 0; owner[index_o] != '\0'; index_o++);
-
+	for (index_n = 0; name[index_n] != '\0'; index_n++)
+		;
+	for (index_o = 0; owner[index_o] != '\0'; index_o++)
+		;
 	new = malloc(sizeof(struct dog));
 	if (new == NULL)
-	{
 		return (NULL);
-	}
 
 	new->name = malloc(sizeof(char) * (index_n + 1));
 	if (new->name == NULL)
@@ -45,14 +41,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	for (i = 0; i <= index_n; i++)
-	{
 		new->name[i] = name[i];
-	}
 
 	for (j = 0; j <= index_o; j++)
-	{
 		new->owner[j] = owner[j];
-	}
 
 	new->age = age;
 
