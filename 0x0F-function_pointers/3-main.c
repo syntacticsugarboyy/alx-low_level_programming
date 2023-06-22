@@ -6,7 +6,7 @@
  * @argv: argument vector
  *
  * Decsription: A program that adds,multiplies,
- * 		divides or modulos numbers
+ *		divides or modulos numbers
  *
  * Return: Always(0)
  */

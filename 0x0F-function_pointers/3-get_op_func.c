@@ -6,6 +6,7 @@
  * @a: First number
  * @b: Second number
  *
+ *
  * Description: A function that selects a function
  *
  * Return: int
@@ -14,7 +15,7 @@
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
-	  	{"+", op_add},
+		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
 		{"/", op_div},
