@@ -3,9 +3,6 @@
 /**
  * get_op_func - gets function
  * @s: pointer to function
- * @a: First number
- * @b: Second number
- *
  *
  * Description: A function that selects a function
  *
