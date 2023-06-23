@@ -2,7 +2,6 @@
 
 /**
  * print_all - prints all arguments
- * @argu: argument
  * @format: list of types of argument
  *
  * Description: A function that prints anything
