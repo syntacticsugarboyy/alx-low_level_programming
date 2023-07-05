@@ -19,9 +19,12 @@ size_t print_listint(const listint_t *h)
 		{
 			printf("[0] nil\n")
 		}
-		printf("%d\n", h->n);
-		h = h->next;
-		num_nodes++;
+		else
+		{
+			printf("%d\n", h->n);
+			h = h->next;
+			num_nodes++;
+		}
 	}
 	return (num_nodes);
 }
