@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[index] != '0' && b[index] != '1')
 		{
 			return (0);
-		} 
+		}
 
 		if (b[index] == '1')
 		{
