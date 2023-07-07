@@ -9,24 +9,21 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int uint = 0;
-	int pow = strlen(b);
 	int index;
-	int deci = 1;
+	unsigned int deci = 0;
 
-	for (index = (pow - 1); index >= 0; index--)
+	if (!b)
 	{
-		if ((b[index] != '0' && b[index] != '1') || !b[index])
+		return (0);
+	}
+	for (index = 0; b[index]; index++)
+	{
+		if (b[index] < '0' || b[index] > '1')
 		{
 			return (0);
 		}
-
-		if (b[index] == '1')
-		{
-			uint += deci;
-		}
-			deci *= 2;
+			deci = 2 * deci + (b[index] - '0');
 	}
 
-	return (uint);
+	return (deci);
 }
