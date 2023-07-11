@@ -3,7 +3,7 @@
 /**
  * read_textfile - reads a text a textfile
  * @filename: pointer to file
- * letters - number of characters
+ * @letters - number of characters
  *
  * Description: A function that reads into a file
  *
