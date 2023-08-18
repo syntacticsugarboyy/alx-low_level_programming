@@ -2,6 +2,7 @@
 
 /**
  * print_dlistint - prints a doubly linked list
+ * @h: Pointer tp head node
  *
  * Return: num_nodes
  */
