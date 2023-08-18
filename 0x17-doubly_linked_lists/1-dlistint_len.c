@@ -2,6 +2,7 @@
 
 /**
  * dlistint_len - prints the length of a linked list
+ * @h: Pointer to head node
  *
  * Return: num_nodes
  */
