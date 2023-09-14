@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 
 	printf("{");
 
-	for (index = 0; ht->size != NULL; index++)
+	for (index = 0; index < ht->size; index++)
 	{
 		p_node = ht->array[index];
 
