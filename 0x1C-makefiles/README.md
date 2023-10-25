@@ -21,4 +21,7 @@
   Explicit rules on the other hand, directly call the commands with their
   targets.
 
-* Useful rules...
+* Useful rules e.g all, etc
+
+* Variables in makefiles are usually macros that are assigned values, they're
+  used to make explicit rules implicit
