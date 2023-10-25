@@ -10,10 +10,12 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # Rules
 all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
+%.o:%.c m.h
+	$(CC) $(CFLAGS) -c -o $@ $< 
 clean:
-	$(RM) *~ $(OBJ)
+	-$(RM) *~ \#*\#  .*.swp $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
