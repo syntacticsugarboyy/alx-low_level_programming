@@ -1,10 +1,13 @@
-A hash function is a function that maps data of arbitrary size to fixed size values.
-It's a fucntion that maps data to hash tables...
+### Hash Tables
+* Hash Tables are data structures that maps keys to values via a hash function.
 
-A good hash function is a function that has minimal collisions.
+* Personally, I see Hash Tables as an array of linked lists with data connected
+  via a hash function.
 
-A hash table is a data structure that stores implemented dictionaries(data mapped to keys)
+* A **good hash function** is one which generates minimal collisions.
 
-Collisions are situations where two or more dictionaries(data) share the same hash
+* A collision is a situation where more than one value assigned to a hash.
+  This increases complexity of the data structure and raises issues.
 
-Hash tables are advantageous as they are very fast. They have a time complexity of constant time O(1).
+* The advantage of Hash tables is that it gives us the organization of arrays
+  while we enjoy the uncertainty advantage of linked lists.
