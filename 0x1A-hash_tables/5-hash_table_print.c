@@ -1,8 +1,9 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - prints a hash table
- * @ht: Pointer to head of hash table
+ * hash_table_print - Prints a hash table
+ *
+ * @ht: Hash Table under consideration
  *
  * Return: void
  */
@@ -10,30 +11,26 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int index;
-	hash_node_t *p_node;
+	hash_node_t *temp;
+	char *sep;
 
 	if (ht == NULL)
 	{
 		return;
 	}
 
-	printf("{");
+	putchar('{');
+	sep = "";
 
 	for (index = 0; index < ht->size; index++)
 	{
-		p_node = ht->array[index];
-
-		while (p_node != NULL)
+		temp = ht->array[index];
+		while (temp != NULL)
 		{
-			printf("'%s': '%s'", p_node->key, p_node->value);
-
-			if (p_node->next != NULL || index < (ht->size - 1))
-			{
-				printf(", ");
-			}
-			p_node = p_node->next;
+			printf("%s'%s: '%s'", sep, temp->key, temp->value);
+			sep = ", ";
+			temp = temp->next;
 		}
 	}
-
 	printf("}\n");
 }
