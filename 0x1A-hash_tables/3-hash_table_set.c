@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_tabvle_set - sets a hash table
+ * hash_table_set - sets a hash table
  *
  * @ht: Hash Table
  * @key: Key
@@ -44,7 +44,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		temp = temp->next;
 	}
-	
+
 	item = hash_node_make(key, value);
 	if (item == NULL)
 	{
