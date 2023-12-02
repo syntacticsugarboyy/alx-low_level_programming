@@ -30,7 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 		/* Loops throught the linked list(if there is) */
 		while (temp != NULL)
 		{
-			printf("%s'%s: '%s'", sep, temp->key, temp->value);
+			printf("%s'%s': '%s'", sep, temp->key, temp->value);
 			sep = ", ";
 			temp = temp->next;
 		}
